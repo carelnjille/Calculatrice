@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+</head>
+<body>
+<h2>CASIO</h2>
+    <section>
+        <input id="calc.space" dir="rtl" onkeydown="if(event.key==='Enter'){calcul();}">
+        <div id="button-div">
+        <button id="operator" onclick="saisy('+')">+</button>
+        <button id="number" onclick="saisy('1')">1</button>
+        <button id="number" onclick="saisy('2')">2</button>
+        <button id="number" onclick="saisy('3')">3</button>
+        <button id=" number" onclick="saisy('4')">4</button>
+        <button id="operator" onclick="saisy('-')">-</button>
+        <button id="number" onclick="saisy('5')">5</button>
+        <button id="number" onclick="saisy('6')">6</button>
+        <button id="number" onclick="saisy('7')">7</button>
+        <button id="number" onclick="saisy('8')">8</button>
+        <button id="operator" onclick="saisy('*')">*</button>
+        <button id="number" onclick="saisy('9')">9</button>
+        <button id="number" onclick="saisy('0')">0</button>
+        <button onclick="saisy('(')">(</button>
+        <button onclick="saisy(')')">)</button>
+        <button id="operator" onclick="saisy('/')">/</button>
+        <button id="delete" onclick="efface()">retour</button>
+        <!-- <button id="delete" onclick="efface_tout()">efface</button> -->
+        <button  onclick="saisy('.')">.</button>
+        <button id="result" onclick="calcul()" >=</button>
+        </div>
+    </section>
+    <script src="Algo.js"></script>
+    <style>
+        body{
+            min-height: 100vh;
+            align-items:center;
+           justify-content: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+           
+        }
+        section{
+            height: 55vh;
+            width: calc(20% + 10px);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 6px 5px 6px rgb(77, 76, 76);
+            background-color: rgba(0, 0, 0, 0.712);
+        }
+        h2{
+            position: relative;
+            left: -100px;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 25px;  
+        }
+        input{
+            width: 97%;
+            height: 40px;
+            border: none;
+            margin: 1px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            padding-inline: 5px;
+        }
+        #button-div{
+           display: grid;
+           grid-template-columns: repeat(5, 1fr);
+           grid-template-rows: repeat(4,1fr);
+           grid-gap: 7px;
+           height: 85%;
+           font-family: 20px;
+        }
+         
+        button{
+            height: 9vh;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+           
+        }
+        button:hover{
+             background-color: rgba(0, 0, 0, 0.116);
+             color: #fff;
+             border: none;
+             box-shadow: none;
+        }
+        button:active{
+            background-color: #000;
+            border: 1px solid rgba(245, 242, 242, 0.856);
+        }
+    </style>
+</body>
+</html>
