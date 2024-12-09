@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="Style/CalcStyle.css"> 
+    <title>Calculatrice</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<h2>CASIO</h2>
+    <section>
+        <input id="calc.space" dir="rtl" onkeydown="if(event.key==='Enter'){calcul();}">
+        
+     <div class="mod"><a style="  color: black;background-color: #fff;">Mode Normal</a><a href="CalcoScient.html">Mode Scient.</a></div>   
+        <div id="button-div">
+        <button id="operator" onclick="saisy('+')">+</button>
+        <button id="number" onclick="saisy('1')">1</button>
+        <button id="number" onclick="saisy('2')">2</button>
+        <button id="number" onclick="saisy('3')">3</button>
+        <button id=" number" onclick="saisy('4')">4</button>
+        <button id="operator" onclick="saisy('-')">-</button>
+        <button id="number" onclick="saisy('5')">5</button>
+        <button id="number" onclick="saisy('6')">6</button>
+        <button id="number" onclick="saisy('7')">7</button>
+        <button id="number" onclick="saisy('8')">8</button>
+        <button id="operator" onclick="saisy('*')">*</button>
+        <button id="number" onclick="saisy('9')">9</button>
+        <button id="number" onclick="saisy('0')">0</button>
+        <button onclick="saisy('(')">(</button>
+        <button onclick="saisy(')')">)</button>
+        <button id="operator" onclick="saisy('/')">/</button>
+        <button id="delete" onclick="efface()">retour</button>
+        <button id="delete" onclick="efface_tout()">efface</button>
+        <button  onclick="saisy('.')">.</button>
+        <button id="result" onclick="calcul()" >=</button>
+        </div>
+    </section>
+    <script src="Fichier-js/Algo.js"></script>
+    
+</body>
+</html>

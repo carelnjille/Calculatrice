@@ -10,7 +10,23 @@
 <h2>CASIO</h2>
     <section>
         <input id="calc.space" dir="rtl" onkeydown="if(event.key==='Enter'){calcul();}">
-        <div id="button-div">
+        <div class="time"><h3 id="heure"></h3>&nbsp;<h3 id="minute"></h3></div>
+       <div class="mod"> <a href="LaCalco.html">Mode Normal</a> <a style="  color: black;background-color: #fff;"> Mode Scient.</a></div>
+       <div id="scientic">
+        <button onclick="power()">y<sup>x</sup></button>
+        <button onclick="facto()"> n! </button>
+        <button onclick="racine()">√</button>
+        <button onclick="binaire()">bin</button>
+        <button onclick="decimal()">decimal</button>
+        <button onclick="hexdec()">Hexadecimal</button>
+        <button onclick="expo()">exp()</button>
+        <button onclick="ln()">log()</button>
+        <button onclick="mod()">mod</button>
+        <button onclick="cos()">cos()</button>
+        <button onclick="sin()">sin()</button>
+        <button onclick="tan()">tan()</button>
+       </div>
+       <div id="button-div">
         <button id="operator" onclick="saisy('+')">+</button>
         <button id="number" onclick="saisy('1')">1</button>
         <button id="number" onclick="saisy('2')">2</button>
@@ -28,12 +44,12 @@
         <button onclick="saisy(')')">)</button>
         <button id="operator" onclick="saisy('/')">/</button>
         <button id="delete" onclick="efface()">retour</button>
-        <!-- <button id="delete" onclick="efface_tout()">efface</button> -->
+        <button id="delete" onclick="efface_tout()">efface</button>
         <button  onclick="saisy('.')">.</button>
         <button id="result" onclick="calcul()" >=</button>
         </div>
     </section>
-    <script src="Algo.js"></script>
+    <script src="Fichier-js/Algo-Scient.js"></script>
     
 </body>
 </html>

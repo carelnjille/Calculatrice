@@ -1,0 +1,128 @@
+body{
+    min-height: 100vh;
+    align-items:center;
+   justify-content: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+   
+}
+section{
+    height: auto;
+    width: calc(20% + 10px);
+    padding: 15px;
+     position: relative;
+    bottom: 2vh;
+    border-radius: 10px;
+    box-shadow: 6px 5px 6px rgb(77, 76, 76);
+    background-color: rgba(0, 0, 0, 0.712);
+}
+h2{
+    position: relative;
+    left: -100px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 25px;  
+}
+input{
+    width: 97%;
+    height: 40px;
+    border: none;
+    margin: 1px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding-inline: 5px;
+    border: 2px solid #00000098;
+}
+
+#button-div{
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(4,1fr);
+   grid-gap: 7px;
+  
+   height: 85%;
+   font-family: 20px;
+}
+ 
+button{
+    height: 9vh;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+   
+}
+button:hover{
+     background-color: rgba(0, 0, 0, 0.116);
+     color: #fff;
+     border: none;
+     box-shadow: none;
+}
+button:active{
+    background-color: #000;
+    border: 1px solid rgba(245, 242, 242, 0.856);
+}
+.mod {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: white;
+     
+    padding-bottom: 5px;
+    margin: 2px;
+    gap: 4px;
+}
+.mod a{
+    text-decoration: none;
+    color: white;
+    border: 2px #fff solid;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    height: 15px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.mod a:hover{
+    color: black;
+    background-color: #fff;
+}
+#scientic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 8px;
+    padding: 0;
+    margin-block: 10px;
+}
+#scientic button{
+   height: 30px;
+   border-radius: 10px;
+   background-color: #9e9e9e3f;
+   border: 2px white solid;
+   color: white;
+}
+#scientic button:hover{
+    color: black;
+    background-color: #fff;
+}
+.time{
+    border: 2px rgba(0, 0, 0, 0.486) solid;
+    height: 20px;
+    width: 32.5%;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 60%;
+    display: flex;
+    flex-direction: row;
+}
+.time h3{
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+}
